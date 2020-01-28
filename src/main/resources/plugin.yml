@@ -1,0 +1,4 @@
+name: DarktalePlugin
+version: 1.0
+main: com.darktale.darktalebukkitplugin.DarktalePlugin
+api-version: 1.14

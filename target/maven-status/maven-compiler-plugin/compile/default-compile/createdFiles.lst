@@ -1,0 +1,3 @@
+com\darktale\darktalebukkitplugin\DarktalePlugin.class
+com\darktale\darktalebukkitplugin\listener\APIExeucteListener.class
+com\darktale\darktalebukkitplugin\listener\PlayerConnectListener.class
