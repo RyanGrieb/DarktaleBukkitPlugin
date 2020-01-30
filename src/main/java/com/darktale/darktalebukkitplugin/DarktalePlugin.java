@@ -2,7 +2,7 @@ package com.darktale.darktalebukkitplugin;
 
 import com.darktale.darktaleapi.DarktaleAPI;
 import com.darktale.darktalebukkitplugin.listener.PlayerConnectListener;
-import com.darktale.darktalebukkitplugin.listener.api.SendPlayerMessage;
+import com.darktale.darktalebukkitplugin.listener.api.APIPlayerListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -12,7 +12,7 @@ public class DarktalePlugin extends JavaPlugin {
     public void onEnable() {
 
         //Register Custom listeners, TODO: use an enum when this list gets big enough
-        DarktaleAPI.getAPI().apiListener().registerListener(new SendPlayerMessage("apiSendPlayerMessage"));
+        DarktaleAPI.getAPI().listenerHandler().registerListener("apiPlayerListener", new APIPlayerListener());
 
         //Register Bukkit Events
         Bukkit.getPluginManager().registerEvents(new PlayerConnectListener(), this);
