@@ -1,6 +1,10 @@
 package com.darktale.darktalebukkitplugin;
 
 import com.darktale.darktaleapi.DarktaleAPI;
+import com.darktale.darktaleapi.data.player.command.APICommandHandler;
+import com.darktale.darktaleapi.event.EventHandler;
+import com.darktale.darktaleapi.listener.ListenerHandler;
+import com.darktale.darktalebukkitplugin.listener.api.APICommandListener;
 import com.darktale.darktalebukkitplugin.listener.bukkit.PlayerConnectListener;
 import com.darktale.darktalebukkitplugin.listener.api.APIPlayerListener;
 import com.darktale.darktalebukkitplugin.listener.bukkit.PlayerChatListener;
@@ -9,11 +13,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class DarktalePlugin extends JavaPlugin {
 
+    private static DarktalePlugin plugin;
+
     @Override
     public void onEnable() {
+        plugin = this;
 
-        //Register Custom listeners, TODO: use an enum when this list gets big enough
+        //Register Custom listeners
+        DarktaleAPI.getAPI().setListenerHandler(new ListenerHandler());
         DarktaleAPI.getAPI().listenerHandler().registerListener("apiPlayerListener", new APIPlayerListener());
+        DarktaleAPI.getAPI().listenerHandler().registerListener("apiCommandListener", new APICommandListener());
+
+        //Register the remaining handlers
+        DarktaleAPI.getAPI().setEventHandler(new EventHandler());
+        DarktaleAPI.getAPI().setCommandHandler(new APICommandHandler());
 
         //Register Bukkit Events
         Bukkit.getPluginManager().registerEvents(new PlayerConnectListener(), this);
@@ -25,4 +38,7 @@ public class DarktalePlugin extends JavaPlugin {
 
     }
 
+    public static DarktalePlugin getPlugin() {
+        return plugin;
+    }
 }

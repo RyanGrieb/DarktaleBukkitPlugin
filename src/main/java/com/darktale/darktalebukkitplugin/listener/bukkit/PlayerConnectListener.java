@@ -2,7 +2,6 @@ package com.darktale.darktalebukkitplugin.listener.bukkit;
 
 import com.darktale.darktaleapi.DarktaleAPI;
 import com.darktale.darktaleapi.event.player.APIPlayerJoinEvent;
-import java.util.UUID;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;

@@ -1,4 +1,5 @@
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerCommandEvent.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\command\APIRegisterCommandEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\APICommand.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\listener\ListenerHandler.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APISendPlayerMessageEvent.java
@@ -11,6 +12,7 @@ C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\listener\APIListener.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\file\JSONManager.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerJoinEvent.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\debug\DebugCommandListener.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\EventHandler.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\DarktaleAPI.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\APIEvent.java
