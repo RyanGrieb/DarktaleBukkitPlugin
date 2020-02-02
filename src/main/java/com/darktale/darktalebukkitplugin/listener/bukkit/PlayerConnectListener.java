@@ -1,4 +1,4 @@
-package com.darktale.darktalebukkitplugin.listener;
+package com.darktale.darktalebukkitplugin.listener.bukkit;
 
 import com.darktale.darktaleapi.DarktaleAPI;
 import com.darktale.darktaleapi.event.player.APIPlayerJoinEvent;

@@ -18,12 +18,12 @@ import org.bukkit.entity.Player;
 public class APIPlayerListener implements APIListener {
 
     public void onAPISendPlayerMessage(APISendPlayerMessageEvent event) {
-        Bukkit.getPlayer(UUID.fromString(event.getPlayerID())).sendMessage(event.getMessage());
+        Bukkit.getPlayer(UUID.fromString(event.getPlayer().getPlayerID())).sendMessage(event.getMessage());
     }
 
     public void onAPITeleportPlayer(APITeleportPlayerEvent event) {
         APILocation l = event.getLocation();
-        Player player = Bukkit.getPlayer(UUID.fromString(event.getPlayerID()));
+        Player player = Bukkit.getPlayer(UUID.fromString(event.getPlayer().getPlayerID()));
 
         player.teleport(new Location(player.getWorld(), l.getX(), l.getY(), l.getZ()));
     }
