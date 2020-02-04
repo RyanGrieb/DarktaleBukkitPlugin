@@ -4,6 +4,7 @@ import com.darktale.darktaleapi.DarktaleAPI;
 import com.darktale.darktaleapi.data.player.command.APICommandHandler;
 import com.darktale.darktaleapi.event.EventHandler;
 import com.darktale.darktaleapi.listener.ListenerHandler;
+import com.darktale.darktalebukkitplugin.listener.api.APIBroadcastListener;
 import com.darktale.darktalebukkitplugin.listener.api.APICommandListener;
 import com.darktale.darktalebukkitplugin.listener.bukkit.PlayerConnectListener;
 import com.darktale.darktalebukkitplugin.listener.api.APIPlayerListener;
@@ -23,6 +24,7 @@ public class DarktalePlugin extends JavaPlugin {
         DarktaleAPI.getAPI().setListenerHandler(new ListenerHandler());
         DarktaleAPI.getAPI().listenerHandler().registerListener("apiPlayerListener", new APIPlayerListener());
         DarktaleAPI.getAPI().listenerHandler().registerListener("apiCommandListener", new APICommandListener());
+        DarktaleAPI.getAPI().listenerHandler().registerListener("apiCommandListener", new APIBroadcastListener());
 
         //Register the remaining handlers
         DarktaleAPI.getAPI().setEventHandler(new EventHandler());
