@@ -20,9 +20,10 @@ public class PlayerChatListener implements Listener {
 
     @EventHandler
     public void prePlayerCommand(PlayerCommandPreprocessEvent event) {
-        //boolean cancelled = DarktaleAPI.getAPI().eventHandler().callEvent(
-        //         new APIPlayerCommandEvent(event.getPlayer().getUniqueId().toString(), event.getMessage()));
-        //event.setCancelled(cancelled);
+        //Note: This is "wrong" implementation on bukkit side. But we don't care since were going to do it right on hytale.
+        boolean cancelled = DarktaleAPI.getAPI().eventHandler().callEvent(
+                new APIPlayerCommandEvent(event.getPlayer().getUniqueId().toString(), event.getMessage()));
+        event.setCancelled(cancelled);
     }
 
 }
