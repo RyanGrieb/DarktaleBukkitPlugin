@@ -24,7 +24,7 @@ public class DarktalePlugin extends JavaPlugin {
         DarktaleAPI.getAPI().setListenerHandler(new ListenerHandler());
         DarktaleAPI.getAPI().listenerHandler().registerListener("apiPlayerListener", new APIPlayerListener());
         DarktaleAPI.getAPI().listenerHandler().registerListener("apiCommandListener", new APICommandListener());
-        DarktaleAPI.getAPI().listenerHandler().registerListener("apiCommandListener", new APIBroadcastListener());
+        DarktaleAPI.getAPI().listenerHandler().registerListener("apiBroadcastListener", new APIBroadcastListener());
 
         //Register the remaining handlers
         DarktaleAPI.getAPI().setEventHandler(new EventHandler());

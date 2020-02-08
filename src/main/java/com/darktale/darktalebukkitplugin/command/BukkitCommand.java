@@ -2,6 +2,7 @@ package com.darktale.darktalebukkitplugin.command;
 
 import com.darktale.darktaleapi.DarktaleAPI;
 import com.darktale.darktaleapi.event.player.APIPlayerCommandEvent;
+import java.util.Arrays;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -22,13 +23,25 @@ public class BukkitCommand implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        Bukkit.broadcastMessage("We need to send the proper message:");
-        Bukkit.broadcastMessage(label);
-        Bukkit.broadcastMessage(args.toString());
-        System.out.println(args);
+        StringBuilder sBuilder = new StringBuilder();
 
-        //DarktaleAPI.getAPI().eventHandler().callEvent(
-        //        new APIPlayerCommandEvent(player.getUniqueId().toString(), event.getMessage()));
+        if (args.length > 0) {
+            sBuilder.append(label + " ");
+        } else {
+            sBuilder.append(label);
+        }
+
+        for (int i = 0; i < args.length; i++) {
+            if (i == args.length - 1) {
+                sBuilder.append(args[i]);
+            } else {
+                sBuilder.append(args[i] + " ");
+            }
+
+        }
+
+        DarktaleAPI.getAPI().eventHandler().callEvent(
+                new APIPlayerCommandEvent(player.getUniqueId().toString(), player.getName(), sBuilder.toString()));
         return false;
     }
 
