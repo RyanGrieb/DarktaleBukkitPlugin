@@ -20,7 +20,8 @@ public class PlayerMoveListener implements Listener {
     public void onPlayerMove(PlayerMoveEvent event) {
         Player player = event.getPlayer();
         APILocation location = new APILocation(player.getLocation().getX(), player.getLocation().getY(), player.getLocation().getZ());
-        DarktaleAPI.getAPI().eventHandler().callEvent(new APIRecivePlayerLocationEvent(player.getUniqueId().toString(), player.getName(), location));
+        boolean canceled = DarktaleAPI.getAPI().eventHandler().callEvent(new APIRecivePlayerLocationEvent(player.getUniqueId().toString(), player.getName(), location));
+        event.setCancelled(canceled);
     }
 
 }

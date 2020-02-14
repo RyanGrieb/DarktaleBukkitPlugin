@@ -2,6 +2,7 @@ package com.darktale.darktalebukkitplugin.listener.bukkit;
 
 import com.darktale.darktaleapi.DarktaleAPI;
 import com.darktale.darktaleapi.event.player.APIPlayerJoinEvent;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

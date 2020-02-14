@@ -1,11 +1,11 @@
 package com.darktale.darktalebukkitplugin.listener.api;
 
 import com.darktale.darktaleapi.DarktaleAPI;
-import com.darktale.darktaleapi.data.player.DarktalePlayer;
 import com.darktale.darktaleapi.data.world.APILocation;
 import com.darktale.darktaleapi.event.player.APIRecivePlayerLocationEvent;
 import com.darktale.darktaleapi.event.player.APIRequestPlayerLocationEvent;
 import com.darktale.darktaleapi.event.player.APISendPlayerMessageEvent;
+import com.darktale.darktaleapi.event.player.APISetPlayerNicknameEvent;
 import com.darktale.darktaleapi.event.player.APITeleportPlayerEvent;
 import com.darktale.darktaleapi.listener.APIListener;
 import java.util.UUID;
@@ -35,6 +35,11 @@ public class APIPlayerListener implements APIListener {
         Player player = Bukkit.getPlayer(UUID.fromString(event.getPlayer().getID()));
         APILocation location = new APILocation(player.getLocation().getX(), player.getLocation().getY(), player.getLocation().getZ());
         DarktaleAPI.getAPI().eventHandler().callEvent(new APIRecivePlayerLocationEvent(player.getUniqueId().toString(), player.getName(), location));
+    }
+
+    public void onAPISetPlayerNicknameEvent(APISetPlayerNicknameEvent event) {
+        Player player = Bukkit.getPlayer(UUID.fromString(event.getPlayer().getID()));
+        player.setDisplayName(event.getNickname());
     }
 
 }
