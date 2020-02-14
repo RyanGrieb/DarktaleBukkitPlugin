@@ -9,6 +9,7 @@ import com.darktale.darktalebukkitplugin.listener.api.APICommandListener;
 import com.darktale.darktalebukkitplugin.listener.bukkit.PlayerConnectListener;
 import com.darktale.darktalebukkitplugin.listener.api.APIPlayerListener;
 import com.darktale.darktalebukkitplugin.listener.bukkit.PlayerChatListener;
+import com.darktale.darktalebukkitplugin.listener.bukkit.PlayerMoveListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -33,6 +34,7 @@ public class DarktalePlugin extends JavaPlugin {
         //Register Bukkit Events
         Bukkit.getPluginManager().registerEvents(new PlayerConnectListener(), this);
         Bukkit.getPluginManager().registerEvents(new PlayerChatListener(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerMoveListener(), this);
     }
 
     @Override

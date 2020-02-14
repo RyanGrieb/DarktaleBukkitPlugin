@@ -1,8 +1,10 @@
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\serverconfig\ServerConfig.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\command\APIRegisterCommandEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\rank\ClanRank.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APISendPlayerMessageEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APITeleportPlayerEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerEvent.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIRecivePlayerLocationEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\world\APILocation.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerJoinEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\DarktaleAPI.java
@@ -10,12 +12,14 @@ C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\clan\Clan.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\database\APIDatabase.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\APICommandHandler.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIRequestPlayerLocationEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerCommandEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\misc\APIBroadcastEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\APICommand.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\listener\ListenerHandler.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\listener\APIListenerWrapper.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\file\JSONFile.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\serverconfig\SetSpawnCommand.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\DarktalePlayer.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\file\FileManager.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\listener\APIListener.java

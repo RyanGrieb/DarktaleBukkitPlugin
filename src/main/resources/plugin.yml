@@ -6,3 +6,5 @@ api-version: 1.14
 commands:
     clan:
       description: NONE
+    setspawn:
+      description: NONE
