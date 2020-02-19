@@ -2,11 +2,12 @@ package com.darktale.darktalebukkitplugin.listener.bukkit;
 
 import com.darktale.darktaleapi.DarktaleAPI;
 import com.darktale.darktaleapi.event.player.APIPlayerJoinEvent;
-import org.bukkit.ChatColor;
+import com.darktale.darktaleapi.event.player.APIPlayerLeaveEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerConnectListener implements Listener {
 
@@ -18,6 +19,12 @@ public class PlayerConnectListener implements Listener {
 
         //TODO: The called event should return TRUE/FALSE telling us if we need to cancel the event
         DarktaleAPI.getAPI().eventHandler().callEvent(new APIPlayerJoinEvent(player.getUniqueId().toString(), player.getName()));
+    }
+
+    @EventHandler
+    public void onPlayerQuit(PlayerQuitEvent event) {
+        Player player = event.getPlayer();
+        DarktaleAPI.getAPI().eventHandler().callEvent(new APIPlayerLeaveEvent(player.getUniqueId().toString(), player.getName()));
     }
 
 }

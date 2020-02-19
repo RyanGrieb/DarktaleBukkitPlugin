@@ -9,12 +9,14 @@ C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\world\APILocation.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerJoinEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\DarktaleAPI.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\clan\ClanPlayer.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\APIEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\clan\Clan.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\database\APIDatabase.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\APICommandHandler.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIRequestPlayerLocationEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerCommandEvent.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\player\APIPlayerLeaveEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\event\misc\APIBroadcastEvent.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\APICommand.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\listener\ListenerHandler.java
@@ -22,6 +24,7 @@ C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\file\JSONFile.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\serverconfig\SetSpawnCommand.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\DarktalePlayer.java
+C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\player\command\test\LongCommand.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\file\FileManager.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\listener\APIListener.java
 C:\Users\Ryan\Documents\NetBeansProjects\DarktaleAPI\src\main\java\com\darktale\darktaleapi\data\file\JSONManager.java
