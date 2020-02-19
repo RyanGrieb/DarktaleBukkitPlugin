@@ -39,7 +39,7 @@ public class DarktalePlugin extends JavaPlugin {
 
     @Override
     public void onDisable() {
-
+        DarktaleAPI.getAPI().saveStates();
     }
 
     public static DarktalePlugin getPlugin() {
